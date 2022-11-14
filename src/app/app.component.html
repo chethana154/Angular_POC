@@ -1,0 +1,8 @@
+
+
+<div *ngFor="let d of jsonData">
+  <ng-container [ngSwitch]="d.type">
+    <app-table *ngSwitchCase="'app-table'"></app-table>
+    <app-button *ngSwitchCase="'app-button'"></app-button>
+  </ng-container>
+</div>

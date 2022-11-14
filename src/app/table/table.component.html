@@ -1,0 +1,9 @@
+<table>
+    <tr>
+      <th *ngFor="let col of colDefs">{{col.label}}</th>
+    </tr>
+    
+    <tr *ngFor="let row of data">
+      <td *ngFor="let col of colDefs">{{row[col.field]}}</td>
+    </tr>
+  </table>

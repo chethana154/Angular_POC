@@ -1,0 +1,7 @@
+<button *ngFor="let btn of btnConfig"
+           mat-raised-button
+           [style.color]="btn.color"
+          [disabled]="btn.disabled">
+    <span *ngIf="btn.icon">{{ btn.icon }}</span>
+    {{ btn.label }}
+  </button>
